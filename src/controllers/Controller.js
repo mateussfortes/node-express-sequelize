@@ -18,7 +18,7 @@ class Controller {
         const dadosAtualizados = req.body;
         console.log(id);
         try {
-            const foiAtualizado = await this.entidadeService.atualizaRegistro(
+            const foiAtualizado = await this.entidadeService.atualizaRegistro(  
                 dadosAtualizados,
                 Number(id)
             );
